@@ -139,6 +139,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 //
 //
 //
+//
+//
+//
 var _default =
 {
   data: function data() {
@@ -146,7 +149,10 @@ var _default =
 
 
   },
-  methods: {} };exports.default = _default;
+  methods: {
+    phoneCall: function phoneCall() {
+      console.log('拨打电话');
+    } } };exports.default = _default;
 
 /***/ }),
 

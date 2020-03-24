@@ -24,8 +24,26 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
+.us {
+  background-color: #EEEEEE;
+}
 .us image {
-  width: 100%;
-  height: 410rpx;
+    width: 100%;
+    height: 410rpx;
+}
+.us view {
+    background-color: #FFFFFF;
+    height: 80rpx;
+    line-height: 80rpx;
+    font-size: 36rpx;
+    padding: 0 20rpx;
+    margin-bottom: 4rpx;
+}
+.us view:first-of-type {
+      margin-top: -10rpx;
+}
+.us .map {
+    height: 750rpx;
+    width: 750rpx;
 }
 

@@ -1,1 +1,1 @@
-<view class="us"><image src="../../static/us.jpg" mode></image></view>
+<view class="us"><image src="../../static/us.jpg"></image><view data-event-opts="{{[['tap',[['phoneCall',['$event']]]]]}}" bindtap="__e">联系：111-1111-1111 (点击拨打)</view><view>北京市东城区东长安街天安门广场北侧</view><map class="map"></map></view>

@@ -1,6 +1,6 @@
 <template>
 	<view>
-		
+		社区图片
 	</view>
 </template>
 
