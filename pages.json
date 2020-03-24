@@ -3,14 +3,54 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				
 			}
 		}
-	],
+		,{
+					"path" : "pages/news/news",
+					"style" : {}
+			}
+			,{
+					"path" : "pages/cart/cart",
+					"style" : {}
+			}
+			,{
+					"path" : "pages/user/user",
+					"style" : {}
+			}
+    ],
 	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "二总商城",
+		"navigationBarBackgroundColor": "#b50e03",
 		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color":"#333333",
+		"selectedColor": "#b50e03",
+		"list": [
+			{
+				"pagePath":"pages/index/index",
+				"text":"首页",
+				"iconPath":"static/font/home.png",
+				"selectedIconPath":"static/font/home-c.png"
+				
+			}, {
+				"pagePath":"pages/news/news",
+				"text":"资讯",
+				"iconPath":"static/font/global.png",
+				"selectedIconPath":"static/font/global-c.png"
+			}, {
+				"pagePath":"pages/cart/cart",
+				"text":"购物车",
+				"iconPath":"static/font/car.png",
+				"selectedIconPath":"static/font/car-c.png"
+			}, {
+				"pagePath":"pages/user/user",
+				"text":"用户",
+				"iconPath":"static/font/user.png",
+				"selectedIconPath":"static/font/user-c.png"
+			}
+		]
 	}
 }
