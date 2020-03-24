@@ -1,1 +1,1 @@
-<view>vadio</view>
+<view class="vd"><block wx:for="{{videos}}" wx:for-item="video" wx:for-index="__i0__" wx:key="id"><view class="m-video"><video src="{{video.vadio}}"></video></view></block></view>
