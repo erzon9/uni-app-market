@@ -18,6 +18,27 @@
 					"path" : "pages/user/user",
 					"style" : {}
 			}
+        ,{
+            "path" : "pages/market/market",
+            "style" : {
+							"navigationBarTitleText":"二总超市",
+							"enablePullDownRefresh": true
+						}
+        }
+        ,{
+            "path" : "pages/us/us",
+            "style" : {
+							"navigationBarTitleText":"联系我们"
+						}
+        }
+        ,{
+            "path" : "pages/pic/pic",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/vadio/vadio",
+            "style" : {}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",

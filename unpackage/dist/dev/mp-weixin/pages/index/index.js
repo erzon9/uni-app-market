@@ -133,30 +133,81 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ 22));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};} //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ 22));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}var goodsList = function goodsList() {return __webpack_require__.e(/*! import() | components/goods-list */ "components/goods-list").then(__webpack_require__.bind(null, /*! ../../components/goods-list.vue */ 71));};var _default =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {
+  components: {
+    'goods-list': goodsList },
+
   data: function data() {
     return {
-      swipers: [] };
+      swipers: [],
+      goods: [],
+      navList: [
+      {
+        id: 0,
+        title: '二总超市',
+        font: 'iconfont icon-chaoshi',
+        path: '/pages/market/market' },
+
+      {
+        id: 1,
+        title: '联系我们',
+        font: 'iconfont icon-lianxiwomen',
+        path: '/pages/us/us' },
+
+      {
+        id: 2,
+        title: '社区图片',
+        font: 'iconfont icon-tupian',
+        path: '/pages/pic/pic' },
+
+      {
+        id: 3,
+        title: '学习视频',
+        font: 'iconfont icon-wei-',
+        path: '/pages/vadio/vadio' }] };
+
+
 
   },
   onLoad: function onLoad() {
     this.getSwipers();
+    this.getGoods();
   },
   methods: {
     // 获取轮播图数据
@@ -164,7 +215,23 @@ var _default =
                   this.$http({
                     url: '/lunbo.json' }));case 2:res = _context.sent;
 
-                this.swipers = res.data.list;case 4:case "end":return _context.stop();}}}, _callee, this);}));function getSwipers() {return _getSwipers.apply(this, arguments);}return getSwipers;}() } };exports.default = _default;
+                this.swipers = res.data.list;case 4:case "end":return _context.stop();}}}, _callee, this);}));function getSwipers() {return _getSwipers.apply(this, arguments);}return getSwipers;}(),
+
+
+    getGoods: function () {var _getGoods = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee2() {var res;return _regenerator.default.wrap(function _callee2$(_context2) {while (1) {switch (_context2.prev = _context2.next) {case 0:_context2.next = 2;return (
+                  this.$http({
+                    url: '/goods-1.json' }));case 2:res = _context2.sent;
+
+
+                this.goods = res.data.list;case 4:case "end":return _context2.stop();}}}, _callee2, this);}));function getGoods() {return _getGoods.apply(this, arguments);}return getGoods;}(),
+
+
+    handleClickNav: function handleClickNav(url) {
+      uni.navigateTo({
+        url: url });
+
+    } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 

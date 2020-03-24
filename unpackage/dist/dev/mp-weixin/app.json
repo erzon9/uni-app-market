@@ -3,7 +3,11 @@
     "pages/index/index",
     "pages/news/news",
     "pages/cart/cart",
-    "pages/user/user"
+    "pages/user/user",
+    "pages/market/market",
+    "pages/us/us",
+    "pages/pic/pic",
+    "pages/vadio/vadio"
   ],
   "subPackages": [],
   "window": {

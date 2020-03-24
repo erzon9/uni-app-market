@@ -1,0 +1,1 @@
+<view class="market"><goods-list vue-id="1b6f9780-1" goodsList="{{goods}}" bind:__l="__l"></goods-list><block wx:if="{{nomoreGoods}}"><view class="nomore">已经到底了</view></block></view>

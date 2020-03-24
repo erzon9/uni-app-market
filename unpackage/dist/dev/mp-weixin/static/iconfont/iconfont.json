@@ -1,0 +1,37 @@
+{
+  "id": "1710110",
+  "name": "nav",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "446769",
+      "name": "超市",
+      "font_class": "chaoshi",
+      "unicode": "e6a7",
+      "unicode_decimal": 59047
+    },
+    {
+      "icon_id": "1288642",
+      "name": "联系我们",
+      "font_class": "lianxiwomen",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "1530753",
+      "name": "视频",
+      "font_class": "wei-",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "2155314",
+      "name": "图片",
+      "font_class": "tupian",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    }
+  ]
+}

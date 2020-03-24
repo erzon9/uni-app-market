@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "二总超市",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "goods-list": "/components/goods-list"
+  }
+}
