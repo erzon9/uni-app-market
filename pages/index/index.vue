@@ -23,7 +23,7 @@
 		<view class="hot-goods">
 			<view class="title">热门推荐</view>
 			
-			<goods-list :goodsList='goods'></goods-list>
+			<goods-list :goodsList='goods' @clickGoodsItem="handleClickGoodsItem"></goods-list>
 			
 			<view class="end">
 				没有更多数据了...
@@ -95,6 +95,12 @@
 				uni.navigateTo({
 					url,
 				})
+			},
+			
+			handleClickGoodsItem(id) {
+				uni.navigateTo({
+					url: '/pages/goodsDetail/goodsDetail?id=' + id,
+				});
 			}
 		}
 	}

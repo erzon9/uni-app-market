@@ -43,6 +43,10 @@
             "path" : "pages/news_content/news_content",
             "style" : {}
         }
+        ,{
+            "path" : "pages/goodsDetail/goodsDetail",
+            "style" : {}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",

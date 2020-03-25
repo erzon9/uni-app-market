@@ -1,6 +1,6 @@
 <template>
 	<view class="goods-list">
-		<view class="goods-item" v-for="goods of goodsList" :key="goods.id">
+		<view class="goods-item" v-for="goods of goodsList" :key="goods.id" @click="handleClick(goods.id)">
 			<image class="img" :src="goods.img" mode="aspectFit"></image>
 			<view class="price">
 				<text>￥{{goods.price}}</text><text>￥{{goods.old_price}}</text>
@@ -18,6 +18,11 @@
 			goodsList: {
 				type: Array,
 				required: true,
+			}
+		},
+		methods: {
+			handleClick(id) {
+				this.$emit('clickGoodsItem', id);
 			}
 		}
 	}

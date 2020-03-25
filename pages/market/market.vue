@@ -1,6 +1,6 @@
 <template>
 	<view class="market">
-		<goodsList :goodsList='goods'></goodsList>
+		<goodsList :goodsList='goods' @clickGoodsItem="handleClickGoodsItem"></goodsList> 
 		<view class="nomore" v-if="nomoreGoods">
 			已经到底了
 		</view>
@@ -56,6 +56,11 @@
 					this.nomoreGoods =  true;
 				}
 				
+			},
+			handleClickGoodsItem(id) {
+				uni.navigateTo({
+					url: '/pages/goodsDetail/goodsDetail?id=' + id,
+				});
 			}
 		}
 	}
